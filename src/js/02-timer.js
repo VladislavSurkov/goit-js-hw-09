@@ -13,7 +13,7 @@ const refs = {
 };
 
 refs.btnStart.disabled = true;
-
+let timerId = null;
 
 const options = {
   enableTime: true,
