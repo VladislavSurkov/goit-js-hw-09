@@ -17,7 +17,8 @@ img {
   max-width: 100%;
 }
 
-[data-start]{
+[data-start],
+[data-stop]{
   width: 145px;
   height: 40px;
 
@@ -33,16 +34,20 @@ img {
   transition: 250ms;
 }
 
-[data-start]:hover {
+[data-start]:hover,
+[data-stop]:hover {
  background-color: rgb(236, 236, 62);
 }
 
-[data-start]:focus {
+[data-start]:focus,
+[data-stop]:focus {
   outline: 3px solid rgb(0, 255, 34);
   border: 3px solid #fff;
 }
 
-[data-start]:disabled,#datetime-picker:disabled {
+[data-start]:disabled,
+[data-stop]:disabled,
+#datetime-picker:disabled {
   opacity: 0;
   cursor: default;
 }
